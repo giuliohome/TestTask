@@ -27,7 +27,7 @@ namespace tasksharpdev
 				while (sr.EndOfStream == false)
 				{
 					line = sr.ReadLine();
-					Match match = Regex.Match(line, "^ciao.*[0-9]$", RegexOptions.IgnoreCase);
+					Match match = Regex.Match(line, "^found.*[0-9]$", RegexOptions.IgnoreCase);
 					string match_word = "";
 					if (match.Success)
 					{
@@ -49,7 +49,7 @@ namespace tasksharpdev
 				while (sr.EndOfStream == false)
 				{
 					string line = sr.ReadLine();
-					Match match = Regex.Match(line, "^ciao.*[0-9]$", RegexOptions.IgnoreCase);
+					Match match = Regex.Match(line, "^found.*[0-9]$", RegexOptions.IgnoreCase);
 					string match_word = "";
 					if (match.Success)
 					{
